@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --color-success:#27e9b5;
+    --color-warning:#f7c94b;
+    --color-primary-foreground:hsl(0 0% 100%) ;
+    --color-primary-deep:hsl(174, 70%, 42%) ;
+    --color-primary-light: hsl(174 74% 85%) ;
+
+    --container-width-1g:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+
+    --background:hsl(0 0% 100%) ;
+    --foreground:hsl( 215 25% 27%);
+
+    --card:hsl(0 0% 100%) ;
+    --card-foreground:hsl(215 25% 27%);
+
+    --popover:hsl(0 0% 100%) ;
+    --popover-foreground:hsl( 215 25% 27%);
+
+    --primary:hsl(213 94% 68%) ;
+    --primary-foreground:hsl(0 0% 100%) ;
+    --primary-deep:hsl(213 100% 50%) ;
+    --primary-light:hsl( 213 94% 85%);
+
+    --secondary:hsl( 214 12% 92%);
+    --secondary-foreground:hsl(215 25% 27%) ;
+
+    --muted:hsl(214 12% 92%) ;
+    --muted-foreground:hsl(215 13% 65%) ;
+
+    --accent:hsl(213 94% 95%) ;
+    --accent-foreground:hsl(213 100% 50%) ;
+
+    --destructive:hsl(0 84.2% 60.2%) ;
+    --destructive-foreground:hsl(0 0% 100%) ;
+
+    --border:hsl(214 12% 88%) ;
+    --input:hsl(214 12% 88%) ;
+    --ring:hsl(213 94% 68%) ;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary-deep)), hsl(var(--primary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-deep) / 0.95), hsl(var(--primary) / 0.85));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--destructive) / 0.3));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(var(--primary) / 0.12);
+    --shadow-elevated: 0 16px 48px -12px hsl(var(--primary) / 0.18);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.5rem;
+
+  }
+
+.hero {
+    background-image: linear-gradient(to bottom,rgba(30, 86, 135, 0.5),rgb(42, 181, 216)),url(img/A\ group\ from\ the\ European\ Baptist\ Federation….jpg);
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.hero-content h1{
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.hero-content p{
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-size: larger;
+    
+}
+
+.hero-content button {
+  color: #2a4a5c;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
+
+.preachings-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    max-width: 90vw;
+    margin-left: 4rem;
+}
+.sermon{
+    background: #5c2a45;
+    text-align: center;
+    border: 2px solid #2a4a5c;
+    transition: var(--transition);
+}
+.sermon:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.sermon-info{
+    padding: 1.5rem;
+}
+.sermon-info p{
+    margin: 1rem 0 2rem;
+    font-size: 0.85rem;
+}
+
+.sermon-image img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/*FAQS */
+.faqs{
+    background: #5c2a45;
+    box-shadow: inset 0 0 3rem black;
+}
+.faqs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.faq{
+    color: #2a4a5c;
+    padding: 2rem;
+    display: flex;
+    background: var(--color-primary-deep);
+    cursor: pointer;
+    height: fit-content;
+    border-radius: 10px;
+    border: 3px solid #2a4a5c;
+
+}
+
+.faq:hover{
+    transform: scale(1.1);
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}
+.faq-icon{
+    align-self: flex-start;
+    font-size: 1.2;
+}
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+.faq.open p{
+    display: block;
+
+}

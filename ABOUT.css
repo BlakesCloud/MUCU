@@ -1,0 +1,208 @@
+.hero {
+    background-image: linear-gradient(to bottom,rgba(30, 86, 135, 0.5),rgb(42, 181, 216)),url(img/Building\ school.jpeg);
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--primary-light);
+}
+
+.hero-content h1{
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.hero-content p{
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-size: larger;
+    
+}
+
+.hero-content button {
+  color: #2a4a5c;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+.header-left p{
+margin-bottom: 1rem;
+font-size: larger;
+line-height: 2rem;
+}
+
+.header-left button{
+    margin-top: 1rem;
+}
+.values-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding: 3.5rem;
+}
+
+.activity{
+    padding: 1.8rem;
+    background-color:#5c2a45;
+    text-align: center;
+    transition: var(--transition);
+    border:2px solid #27e9b5;
+    border-radius: 20px;
+}
+
+.activity:hover{
+    background: transparent;
+    border-color: var(--color-primary-light);
+}
+
+.activity-info{
+    padding: 1.5rem;
+}
+
+.activity-info p{
+    margin: 1rem 0 2rem;
+    font-size: larger;
+    line-height: 1.5rem;
+}
+
+.activity-image img{
+    height: 300px;
+    object-fit:cover ;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
+
+.activity-image i{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+
+
+.history-container{
+    margin-top: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    height: 90vh;
+}
+
+.history-right{
+    margin: 1rem 1rem 2rem;
+    padding-right: 2rem;
+    font-size: larger;
+    line-height: 2rem;
+
+}
+
+.history-right h1{
+    margin: 1rem 0 2rem;
+    line-height: 3rem;
+}
+
+.history-right h5{
+  background-color:#5c2a45;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: large;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.left-image img{
+  height: 500px;
+  width: 45vw;
+  margin-left: 5rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  border: 2px solid #27e9b5;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+    max-width: 90vw;
+    margin-left: 4rem;
+}
+
+.team-member{
+    background: #5c2a45;
+    padding: 1.5rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid #27e9b5;
+}
+
+.team-member:hover{
+    background: transparent;
+    border-color: var(--color-primary-light);
+}
+
+.team-member-image img{
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    filter: saturate(0);
+    border-radius: 10px;
+    padding: 0.5rem;
+  
+    
+}
+
+.team-member-info{
+    text-align: center;
+    margin-top: 1.3rem;
+}
+
+.team-member-info p{
+    color: var(--color-primary-light);
+}
+
+.team-member-image img:hover{
+    filter: saturate(1);
+    border-color: var(--color-primary-light);
+}
+
+.team-member-socials{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #2a4a5c;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem black;
+    transition: var(--transition);
+}
+
+.team-member-socials a{
+  padding: 0.8rem;
+}
+.team-member-socials i{
+    color: #27e9b5;
+    font-size: large;
+}
+
+.team-member:hover 
+.team-member-socials{
+    right: 0;
+}
