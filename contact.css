@@ -358,6 +358,7 @@
     background: #2a4a5c;
     border: 2px solid #27e9b5;
     border-radius: 5px;
+    padding: 2rem;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -371,4 +372,10 @@
     width: 200px;
     display: block;
     align-content: center;
+    justify-content: center;
+}
+
+.lineup-right button{
+    border-radius: 10px;
+    margin-left: 2rem;
 }
