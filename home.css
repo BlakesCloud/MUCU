@@ -546,13 +546,15 @@ nav button{
 }
 
 .testimonials-container{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+    height: 500px;
+    display: flex;
+    flex-wrap:nowrap;
     gap: 2rem;
     padding: 3.5rem;
 }
 
 .testimonial{
+    width: 700px;
     padding: 1.8rem;
     background-color:#5c2a45;
     text-align: center;
@@ -586,6 +588,17 @@ nav button{
     color: var(--primary-deep);
 }
 
+.swiper-pagination{
+    color: #27e9b5;
+}
+
+/*TESTIMONIALS*/
+.testimonials-container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
 .contact-container{
     width: 1200px;
     padding: 3rem;
@@ -605,6 +618,7 @@ nav button{
 .contact-container p{
     font-size: larger;
 }
+
 
 .footer{
     bottom: 0;

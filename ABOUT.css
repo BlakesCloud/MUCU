@@ -213,7 +213,10 @@ line-height: 2rem;
       justify-content: space-between;
       margin-bottom: 50px;
     }
-
+.connect i{
+    font-size: 2rem;
+    margin: 1rem;
+}
  .contact-form {
       flex: 1;
       padding: 20px;

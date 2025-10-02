@@ -104,7 +104,7 @@
     <section class="stats">
         <div class="stats">
             <div><strong>100%</strong><br>Campus transitions</div>
-            <div><strong>100+</strong><br>Weekly attendees</div>
+            <div><strong>1000+</strong><br>Weekly attendees</div>
             <hr>
             <div><strong>20+</strong><br>Local Collaborators</div>
             <hr>
@@ -235,42 +235,93 @@
     </section>
     <!--end of schedule-->
 
-    <!--start of testimonial-->
-    <section class="section">
-        <div class="description">
+    <div class="description">
             <h5 class="btn">Testimonials</h5>
                 <h1>Lives Being Transformed</h1>
                 <p>Hear from our community about how cornerstone has impacted their journey.</p>
         </div>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <h3>AH</h3>
-                <p>"MUCU has been my anchor during challenging times. The community feels like family."</p>
+     <section class="testimonials-container mySwiper">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="testimonial-info">
+                    <h3>PO</h3>
+                <p>"Moi University Christian Union at main campus is the place where you will delight, enjoy and spend your time in seeking the Lord.A stronger desire of the union is the determination in working together as the body of Christ in the fulfillment of the call of the Lord 'Go ye therefore and make disciples of all the nations.....' Matthew 28:19 We therefore mentor and train future leaders, making disciples of Jesus Christ in the student world."</p>
+                <h4>Philip Ololongonjine</h4>
+                <p>CU Patron 2018</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <h3>BM</h3>
+                <p>" Serving in Moi University Christian Union Main Campus has been an incredible journey filled with both unique challenges and great joys. One of the most profound experiences has been the warmth of the students and their deep desire to grow in faith. Through this journey, I have witnessed God's faithfulness in remarkable ways. Serving in MUCU MC will always be a testimony of how He equipped and sustained me in my assignment to serve among students. It is a story i will cherish for a lifetime."</p>
 
-                <h4>Amina Hassan</h4>
+                <h4>Brian Mwangi</h4>
+                <p>MUCU MC STEM Staff 2025</p>
+            </article>
+            
+
+            <article class="testimonial swiper-slide">
+                <h3>MM</h3>
+                <p>" Even given an opportunity to choose I'll still choose Moi University. This is because, here through discipleship and prayer docket I've been shaped . I've learned and unlearned. I was struggling with bitterness and unforgiveness for years even though I was in many sermons about forgiveness....It did not hit me. But the message was presented that day.. Its still vivid .. I've encountered God in many spheres through various programs. I'm a proud product of MUCU MC.....Long live</p>
+
+                <h4>Miriam Munyau</h4>
                 <p>Medical Student</p>
-            </div>
+            </article>
 
-            <div class="testimonial">
+             <article class="testimonial swiper-slide">
                 <h3>JM</h3>
-                <p>"MUCU has been my anchor during challenging times. The community feels like family."</p>
+                <p>“I, Baraza Wilberforce is indeed born again and in Christ Jesus I have eternal life for MISINGI has really helped me establish a still assurance of my salvation by providing responses to the very many doubts and questions I had about God and my christian faith"</p>
 
-                <h4>Jeff Mwirigi</h4>
-                <p>Engineering Student</p>
-            </div>
+                <h4>Wilberforce Baraza</h4>
+                <p>Discipleship leader 2024/2025</p>
+            </article>
 
-            <div class="testimonial">
-                <h3>MA</h3>
-                <p>"MUCU has been my anchor during challenging times. The community feels like family."</p>
+            <article class="testimonial swiper-slide">
+                <h3>LO</h3>
+                <p>"The systematic and chronological teaching of the word of God right away from the Old Testament to the New Testament really had a positive impact unto my life for it deepened my knowledge and understanding of who God is"</p>
 
-                <h4>Mary Atieno</h4>
-                <p>Education Student</p>
-            </div>
+                <h4>Lameck Osuka</h4>
+                <p>Chairperson 2018</p>
+            </article>
+
+             <article class="testimonial swiper-slide">
+                <h3>IS</h3>
+                <p>""This story that never dies really had its way into my heart and it has helped me to come to the point of acknowledging that the entire bible puts emphasis on one thing - Christ Jesus"</p>
+
+                <h4>Isaac Samuel</h4>
+                <p>Media Chair 2024/2025</p>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <h3>BM</h3>
+                <p>" MISINGI, through the Moi university Christian Union, has really helped me to have at hand the essence of reading the Bible in a systematic manner with intentionality of which a greater extent I had a challenge in"</p>
+
+                <h4>Brian Murage</h4>
+                <p>Website Ministry Leader 2021/2022</p>
+            </article>
         </div>
-
+        <div class="swiper-pagination"></div>
     </section>
-    <!--end of testimonials-->
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+   
+     <script>
+     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when window width is >= 600px
+      breakpoints: {
+        600: {
+            slidesPerView: 2,
+        }
+      }
+    });
+     </script>
 
     <!--start of contacts-->
     <section class="section">
