@@ -520,6 +520,9 @@ nav button{
     margin-bottom: 2px;
     font-size: larger;
     text-align: center;
+    justify-content: center;
+    
+    
 }
 
 .description h1{
@@ -604,7 +607,7 @@ nav button{
     padding: 3rem;
      text-align: center;
     margin-bottom:1rem;
-    margin-left: 10vw;
+    margin-left: 14rem;
     justify-content: center;
     line-height: 2.5rem;
     background-color: #5c2a45;

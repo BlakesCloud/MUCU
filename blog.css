@@ -542,9 +542,9 @@ input:checked + label .description {
 }
 
 .description p{
-    margin-left: 4rem;
-    margin-bottom: 2px;
-    max-width: 1300px;
+    margin-left: 15%;
+    margin-top: 2px;
+    max-width: 1200px;
     font-size: larger;
     justify-content: center;
     text-align: center;

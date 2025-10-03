@@ -207,6 +207,10 @@ line-height: 2rem;
     right: 0;
 }
 
+.contact-container{
+ margin-right: 4rem;
+ justify-content: center;
+}
  .connect {
     margin-top: 2rem;
       display: flex;
