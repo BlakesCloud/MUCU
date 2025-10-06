@@ -325,7 +325,7 @@ nav button{
 
 .events-right-image img{
   height: 320px;
-  width: 649px;
+  width: 42vw;
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 5px;
@@ -395,7 +395,7 @@ nav button{
 .event-right-info{
     padding: 1rem;
     background: #5c2a45;
-    width: 649px;
+    width:42.2vw;
     justify-content: center;
     text-align: center;
 }
